@@ -10,7 +10,7 @@ script:
   - docker run -e CI=true motomaniak/docker-react npm run test
 
 deploy: 
-  prodiver: elasticbeanstalk
+  provider: elasticbeanstalk
   region: "us-west-2"
   app: "docker-react"
   env: "Dockerreact-env"
